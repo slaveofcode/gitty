@@ -1,4 +1,4 @@
-# gitty
+# Gitty
 A simple git operations for human based on dulwich project and Python3, most of these commands are base on very basic command on git. 
 
 ## List of Supported Commands

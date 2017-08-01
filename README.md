@@ -3,7 +3,7 @@ A simple git operations for human based on dulwich project and Python3, most of 
 
 ## List of Supported Commands
 - [`git config`](https://github.com/slaveofcode/gitty#git-config)
-- `git clone`
+- [`git clone`](https://github.com/slaveofcode/gitty#git-clone)
 - `git fetch`
 - `git init`
 - `git remote`
@@ -43,6 +43,14 @@ get config value from the repository config file `eg: .git/config`, so if you ge
 
     // git config remote.origin.url
     git.config('remote.origin.url)  // https://github.com/slaveofcode/gitty.git
+
+
+#### Git Clone
+
+clone a repository.
+
+    from gitty import Gitty
+    Gitty.clone('https://github.com/slaveofcode/gitty.git', 'path-clone-folder')
 
 
 

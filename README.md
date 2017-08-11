@@ -4,7 +4,7 @@ A simple git operations for human based on dulwich project and Python3, most of 
 ## List of Supported Commands
 - [`git config`](https://github.com/slaveofcode/gitty#git-config)
 - [`git clone`](https://github.com/slaveofcode/gitty#git-clone)
-- `git fetch`
+- [`git fetch`](https://github.com/slaveofcode/gitty#git-fetch)
 - `git init`
 - `git remote`
 - `git add`
@@ -33,16 +33,16 @@ get config value from the repository config file `eg: .git/config`, so if you ge
 
     from gitty import Gitty
 
-    git = Gitty('.') // set repo on current directory 
+    git = Gitty('.') # set repo path, default is on current directory 
 
-    // git config user.name
-    git.config('user.name')  // 'Aditya Kresna Permana'
+    # git config user.name
+    git.config('user.name')  # 'Aditya Kresna Permana'
 
-    // git config user.email
-    git.config('user.email')  // 'zeandcode@gmail.com'
+    # git config user.email
+    git.config('user.email') # 'zeandcode@gmail.com'
 
-    // git config remote.origin.url
-    git.config('remote.origin.url)  // https://github.com/slaveofcode/gitty.git
+    # git config remote.origin.url
+    git.config('remote.origin.url)  # https://github.com/slaveofcode/gitty.git
 
 
 #### Git Clone
@@ -52,7 +52,13 @@ clone a repository.
     from gitty import Gitty
     Gitty.clone('https://github.com/slaveofcode/gitty.git', 'path-clone-folder')
 
+#### Git Fetch
 
+fetch from remote server
+
+    from gitty import Gitty
+    git = Gitty('.')  # set repo path, default is on current directory 
+    git.fetch()
 
 
 # Install

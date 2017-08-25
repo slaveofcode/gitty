@@ -63,6 +63,3 @@ fetch from remote server
 
 # Install
     pip install gitty
-
-# Documentation
-...coming soon
